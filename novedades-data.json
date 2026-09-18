@@ -80,6 +80,15 @@
       "excerpt_es": "Contactos desde CSV, JSON o Google Sheets, plantillas aprobadas, envío programado y estadísticas de enviados, entregados y leídos.",
       "title_en": "WhatsApp campaigns from the same panel",
       "excerpt_en": "Contacts from CSV, JSON or Google Sheets, approved templates, scheduled sending and stats on sent, delivered and read."
+    },
+    {
+      "slug": "integraciones-recaptcha-sheets-api",
+      "date": "2026-08-01",
+      "image": "",
+      "title_es": "Integraciones: antispam, avisos y API REST",
+      "excerpt_es": "reCAPTCHA y Cloudflare Turnstile contra el spam, avisos por Telegram y SMS, Google Sheets para los datos y API REST con webhooks para lo demás.",
+      "title_en": "Integrations: antispam, alerts and a REST API",
+      "excerpt_en": "reCAPTCHA and Cloudflare Turnstile against spam, Telegram and SMS alerts, Google Sheets for data, and a REST API with webhooks for everything else."
     }
   ]
 }

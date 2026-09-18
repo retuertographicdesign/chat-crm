@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Integraciones: antispam, avisos y API REST · Chat CRM by Retuerto Graphic Design</title>
+<meta name="description" content="reCAPTCHA y Cloudflare Turnstile contra el spam, avisos por Telegram y SMS, Google Sheets para los datos y API REST con webhooks para lo demás.">
+<meta property="og:title" content="Integraciones: antispam, avisos y API REST">
+<meta property="og:description" content="reCAPTCHA y Cloudflare Turnstile contra el spam, avisos por Telegram y SMS, Google Sheets para los datos y API REST con webhooks para lo demás.">
+<meta property="og:type" content="article">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='26' fill='%235B7CFA'/%3E%3Cpath d='M78 46.5a30 30 0 0 1-3.2 13.5 30.5 30.5 0 0 1-27.3 16.9 30 30 0 0 1-13.5-3.2L20 78l6.8-20.4A30 30 0 0 1 23.6 44 30.5 30.5 0 0 1 40.5 16.7 30 30 0 0 1 54 13.5h1.8A30.4 30.4 0 0 1 84 41.9z' fill='none' stroke='%23fff' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+
+<div id="site-header-slot"></div>
+
+<section class="post-hero">
+  <div class="wrap">
+    <span class="eyebrow" data-i18n="novedades_eyebrow">Últimas noticias</span>
+    <h1 id="postTitle">Integraciones: antispam, avisos y API REST</h1>
+    <div class="post-meta" id="postDate">1 de agosto de 2026</div>
+  </div>
+</section>
+
+<section class="post-body">
+  <div class="wrap">
+    <div id="postContentEs">
+      <p>Chat CRM no pretende sustituir a todo lo que ya usa el equipo: se conecta con ello. Estas son las integraciones que trae de serie.</p>
+      <h2>Antispam</h2>
+      <p>reCAPTCHA protege los formularios de spam y bots. Cloudflare Turnstile hace lo mismo sin fricción para el usuario, que ni se entera de que está siendo verificado.</p>
+      <h2>Avisos</h2>
+      <p>Telegram manda avisos instantáneos de cada evento nuevo, y Twilio envía alertas por SMS para lo que no puede esperar a que alguien mire el panel.</p>
+      <h2>Datos y desarrollo a medida</h2>
+      <ul>
+        <li>Google Sheets, para importar y exportar los datos del equipo.</li>
+        <li>API REST y webhooks, para cualquier integración que no venga de fábrica.</li>
+      </ul>
+      <p>Con esto se cierran los nueve módulos de la plataforma: bandeja compartida, canales, widget, chatbots, IA, base de conocimiento, tickets, campañas de WhatsApp e integraciones.</p>
+    </div>
+    <div id="postContentEn" style="display:none;">
+      <p>Chat CRM does not try to replace everything the team already uses: it connects to it. These are the integrations it ships with.</p>
+      <h2>Antispam</h2>
+      <p>reCAPTCHA protects forms from spam and bots. Cloudflare Turnstile does the same with no friction for the user, who never notices being verified.</p>
+      <h2>Alerts</h2>
+      <p>Telegram sends instant alerts for every new event, and Twilio sends SMS alerts for whatever cannot wait until someone looks at the panel.</p>
+      <h2>Data and custom development</h2>
+      <ul>
+        <li>Google Sheets, to import and export the team’s data.</li>
+        <li>A REST API and webhooks, for any integration that does not come out of the box.</li>
+      </ul>
+      <p>That closes the platform’s nine modules: shared inbox, channels, widget, chatbots, AI, knowledge base, ticketing, WhatsApp campaigns and integrations.</p>
+    </div>
+
+    <div class="post-share">
+      <span class="share-label" data-i18n="share_label">Compartir:</span>
+      <div class="socials" id="shareIcons"></div>
+    </div>
+    <a class="post-back" href="../novedades.html" data-i18n="post_back">← Volver a novedades</a>
+  </div>
+</section>
+
+<div id="site-footer-slot"></div>
+
+<script src="../assets/i18n.js"></script>
+<script>
+  const POST_ES_TITLE = "Integraciones: antispam, avisos y API REST";
+  const POST_EN_TITLE = "Integrations: antispam, alerts and a REST API";
+  const POST_DATE = '2026-08-01';
+  const POST_URL = window.location.href;
+
+  function onLanguageChange(lang){
+    const es = lang !== 'en';
+    document.getElementById('postContentEs').style.display = es ? '' : 'none';
+    document.getElementById('postContentEn').style.display = es ? 'none' : '';
+    const title = es ? POST_ES_TITLE : POST_EN_TITLE;
+    document.getElementById('postTitle').textContent = title;
+    document.getElementById('postDate').textContent =
+      new Date(POST_DATE + 'T00:00:00').toLocaleDateString(es ? 'es-ES' : 'en-GB', {day:'numeric', month:'long', year:'numeric'});
+    if (window.SiteShare) SiteShare.render('shareIcons', POST_URL, title);
+  }
+</script>
+<script>window.SITE_PREFIX = "../";</script>
+<script src="../assets/site-common.js"></script>
+
+</body>
+</html>
