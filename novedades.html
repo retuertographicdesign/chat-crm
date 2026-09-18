@@ -21,7 +21,7 @@
 <section class="novedades-hero">
   <div class="wrap">
     <span class="eyebrow" data-i18n="novedades_eyebrow">Últimas noticias</span>
-    <h1><span data-i18n="novedades_title1">Lo nuevo en</span><span class="accent" data-i18n="novedades_title2">Chat CRM</span></h1>
+    <h1><span data-i18n="novedades_title1">Lo nuevo en</span> <span class="accent" data-i18n="novedades_title2">Chat CRM</span></h1>
   </div>
 </section>
 
@@ -58,9 +58,11 @@
         const title = lang === 'en' ? (p.title_en || p.title_es) : p.title_es;
         const excerpt = lang === 'en' ? (p.excerpt_en || p.excerpt_es) : p.excerpt_es;
         const dateStr = new Date(p.date + 'T00:00:00').toLocaleDateString(lang === 'en' ? 'en-GB' : 'es-ES', {day:'numeric', month:'long', year:'numeric'});
+        /* sin imagen no se pinta la miniatura: mejor una tarjeta de texto limpia
+           que un bloque vacío que parezca una imagen rota */
         const thumb = p.image
           ? `<div class="thumb"><img src="${p.image}" alt="${title}" loading="lazy"></div>`
-          : `<div class="thumb"></div>`;
+          : '';
         return `<article class="nov-card">
           ${thumb}
           <div class="body">

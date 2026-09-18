@@ -8,6 +8,78 @@
       "excerpt_es": "Bandeja compartida, chatbots con IA, tickets, base de conocimiento y campañas de WhatsApp: los nueve módulos de Chat CRM ya se pueden contratar e instalar en cualquier web.",
       "title_en": "Chat CRM is now available",
       "excerpt_en": "Shared inbox, AI chatbots, tickets, knowledge base and WhatsApp campaigns: all nine Chat CRM modules can now be bought and installed on any website."
+    },
+    {
+      "slug": "bandeja-compartida-equipo",
+      "date": "2026-09-16",
+      "image": "",
+      "title_es": "Una bandeja de entrada para todo el equipo",
+      "excerpt_es": "Todos los canales en un único inbox, con agentes asignados por canal, traspaso de chats, notas internas y respuestas guardadas.",
+      "title_en": "One inbox for the whole team",
+      "excerpt_en": "Every channel in a single inbox, with agents assigned per channel, chat handovers, internal notes and saved replies."
+    },
+    {
+      "slug": "todos-los-canales-una-bandeja",
+      "date": "2026-09-12",
+      "image": "",
+      "title_es": "Todos los canales que ya usan tus clientes",
+      "excerpt_es": "WhatsApp, Instagram, Messenger, SMS, Telegram, Viber, LINE, WeChat, Zalo y un canal API para cualquier otra plataforma.",
+      "title_en": "Every channel your customers already use",
+      "excerpt_en": "WhatsApp, Instagram, Messenger, SMS, Telegram, Viber, LINE, WeChat, Zalo and an API channel for any other platform."
+    },
+    {
+      "slug": "widget-web-cuatro-paginas",
+      "date": "2026-09-09",
+      "image": "",
+      "title_es": "El widget web: hasta cuatro páginas en un solo botón",
+      "excerpt_es": "Chat en vivo, base de conocimiento y tickets dentro de la propia web, con el estilo de la marca y sin tocar código.",
+      "title_en": "The web widget: up to four pages behind one button",
+      "excerpt_en": "Live chat, knowledge base and tickets inside your own site, in your brand’s style and without touching code."
+    },
+    {
+      "slug": "chatbots-sin-codigo",
+      "date": "2026-09-04",
+      "image": "",
+      "title_es": "Chatbots sin escribir una línea de código",
+      "excerpt_es": "Un editor visual de flujos, con IA o por reglas, lógica condicional, acciones externas y traspaso a humano sin perder el contexto.",
+      "title_en": "Chatbots without writing a line of code",
+      "excerpt_en": "A visual flow editor, with AI or rules, conditional logic, external actions and handover to a human without losing context."
+    },
+    {
+      "slug": "ia-sin-ataduras-api-key-propia",
+      "date": "2026-08-28",
+      "image": "",
+      "title_es": "IA sin ataduras: tu proveedor y tu API key",
+      "excerpt_es": "OpenAI, Claude, Gemini, DeepSeek, Grok, OpenRouter, HuggingFace o modelos autoalojados, con la clave del propio cliente y sin sobrecostes.",
+      "title_en": "AI with no strings: your provider, your API key",
+      "excerpt_en": "OpenAI, Claude, Gemini, DeepSeek, Grok, OpenRouter, HuggingFace or self-hosted models, with the client’s own key and no markup."
+    },
+    {
+      "slug": "centro-de-ayuda-dominio-propio",
+      "date": "2026-08-21",
+      "image": "",
+      "title_es": "Un centro de ayuda en tu propio dominio",
+      "excerpt_es": "Guías, tutoriales y FAQ con buscador, publicados en el dominio del cliente y sin servidor — y además sirven de fuente para la IA.",
+      "title_en": "A help centre on your own domain",
+      "excerpt_en": "Guides, tutorials and FAQs with search, published on the client’s domain with no server — and they also feed the AI."
+    },
+    {
+      "slug": "de-correos-sueltos-a-tickets",
+      "date": "2026-08-14",
+      "image": "",
+      "title_es": "De correos sueltos a tickets con dueño",
+      "excerpt_es": "Los emails entrantes se convierten en tickets con todo el hilo, se reparten solos por reglas y siguen estados y prioridades propios.",
+      "title_en": "From scattered emails to tickets with an owner",
+      "excerpt_en": "Incoming emails become tickets with the full thread, get distributed by rules and follow your own statuses and priorities."
+    },
+    {
+      "slug": "campanas-whatsapp-desde-el-panel",
+      "date": "2026-08-07",
+      "image": "",
+      "title_es": "Campañas de WhatsApp desde el mismo panel",
+      "excerpt_es": "Contactos desde CSV, JSON o Google Sheets, plantillas aprobadas, envío programado y estadísticas de enviados, entregados y leídos.",
+      "title_en": "WhatsApp campaigns from the same panel",
+      "excerpt_en": "Contacts from CSV, JSON or Google Sheets, approved templates, scheduled sending and stats on sent, delivered and read."
     }
   ]
 }

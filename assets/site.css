@@ -403,7 +403,9 @@ header.scrolled .lang-btn{background:rgba(11,16,32,.06);border-color:var(--line)
 .novedades-hero .wrap{position:relative;z-index:2;}
 .novedades-hero .eyebrow{color:var(--brand-soft);}
 .novedades-hero h1{font-family:'Sora',system-ui,sans-serif;font-size:clamp(2rem,4vw,2.9rem);font-weight:700;line-height:1.1;margin:.5rem 0 0;letter-spacing:-.02em;}
-.novedades-hero h1 .accent{background:linear-gradient(90deg,var(--brand-soft),var(--brand-2));-webkit-background-clip:text;background-clip:text;color:transparent;margin-left:.3rem;}
+.novedades-hero h1 .accent{background:linear-gradient(90deg,var(--brand-soft),var(--brand-2));-webkit-background-clip:text;background-clip:text;color:transparent;}
+/* tarjeta sin miniatura: un filete de color arriba para que no quede desnuda */
+.nov-card:not(:has(.thumb)) .body{border-top:3px solid transparent;border-image:linear-gradient(90deg,var(--brand),var(--brand-2)) 1;}
 .novedades-list{background:var(--mist);padding:70px 0 100px;}
 .nov-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;}
 .nov-card{background:var(--paper);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column;transition:transform .25s ease, box-shadow .25s ease;}

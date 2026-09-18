@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>De correos sueltos a tickets con dueño · Chat CRM by Retuerto Graphic Design</title>
+<meta name="description" content="Los emails entrantes se convierten en tickets con todo el hilo, se reparten solos por reglas y siguen estados y prioridades propios.">
+<meta property="og:title" content="De correos sueltos a tickets con dueño">
+<meta property="og:description" content="Los emails entrantes se convierten en tickets con todo el hilo, se reparten solos por reglas y siguen estados y prioridades propios.">
+<meta property="og:type" content="article">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='26' fill='%235B7CFA'/%3E%3Cpath d='M78 46.5a30 30 0 0 1-3.2 13.5 30.5 30.5 0 0 1-27.3 16.9 30 30 0 0 1-13.5-3.2L20 78l6.8-20.4A30 30 0 0 1 23.6 44 30.5 30.5 0 0 1 40.5 16.7 30 30 0 0 1 54 13.5h1.8A30.4 30.4 0 0 1 84 41.9z' fill='none' stroke='%23fff' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+
+<div id="site-header-slot"></div>
+
+<section class="post-hero">
+  <div class="wrap">
+    <span class="eyebrow" data-i18n="novedades_eyebrow">Últimas noticias</span>
+    <h1 id="postTitle">De correos sueltos a tickets con dueño</h1>
+    <div class="post-meta" id="postDate">14 de agosto de 2026</div>
+  </div>
+</section>
+
+<section class="post-body">
+  <div class="wrap">
+    <div id="postContentEs">
+      <p>El sistema de tickets se ocupa de cada solicitud de principio a fin, para que nada se quede en la bandeja de correo de una sola persona.</p>
+      <h2>El correo deja de ser un agujero negro</h2>
+      <p>Los emails entrantes se convierten en tickets con todo el hilo incluido, y se responde desde el propio sistema.</p>
+      <h2>Reparto y flujo</h2>
+      <p>Las reglas y condiciones asignan los tickets solas y equilibran la carga del equipo. Los estados, las prioridades y los tipos de ticket se definen a medida, para que el flujo se parezca a cómo trabaja de verdad cada negocio.</p>
+    </div>
+    <div id="postContentEn" style="display:none;">
+      <p>The ticketing system handles every request from start to finish, so nothing gets stuck in one person’s mailbox.</p>
+      <h2>Email stops being a black hole</h2>
+      <p>Incoming emails become tickets with the full thread attached, and are answered from inside the system itself.</p>
+      <h2>Distribution and workflow</h2>
+      <p>Rules and conditions assign tickets on their own and balance the team’s workload. Statuses, priorities and ticket types are defined to measure, so the workflow matches how each business actually works.</p>
+    </div>
+
+    <div class="post-share">
+      <span class="share-label" data-i18n="share_label">Compartir:</span>
+      <div class="socials" id="shareIcons"></div>
+    </div>
+    <a class="post-back" href="../novedades.html" data-i18n="post_back">← Volver a novedades</a>
+  </div>
+</section>
+
+<div id="site-footer-slot"></div>
+
+<script src="../assets/i18n.js"></script>
+<script>
+  const POST_ES_TITLE = "De correos sueltos a tickets con dueño";
+  const POST_EN_TITLE = "From scattered emails to tickets with an owner";
+  const POST_DATE = '2026-08-14';
+  const POST_URL = window.location.href;
+
+  function onLanguageChange(lang){
+    const es = lang !== 'en';
+    document.getElementById('postContentEs').style.display = es ? '' : 'none';
+    document.getElementById('postContentEn').style.display = es ? 'none' : '';
+    const title = es ? POST_ES_TITLE : POST_EN_TITLE;
+    document.getElementById('postTitle').textContent = title;
+    document.getElementById('postDate').textContent =
+      new Date(POST_DATE + 'T00:00:00').toLocaleDateString(es ? 'es-ES' : 'en-GB', {day:'numeric', month:'long', year:'numeric'});
+    if (window.SiteShare) SiteShare.render('shareIcons', POST_URL, title);
+  }
+</script>
+<script>window.SITE_PREFIX = "../";</script>
+<script src="../assets/site-common.js"></script>
+
+</body>
+</html>

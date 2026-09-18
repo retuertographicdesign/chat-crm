@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Todos los canales que ya usan tus clientes · Chat CRM by Retuerto Graphic Design</title>
+<meta name="description" content="WhatsApp, Instagram, Messenger, SMS, Telegram, Viber, LINE, WeChat, Zalo y un canal API para cualquier otra plataforma.">
+<meta property="og:title" content="Todos los canales que ya usan tus clientes">
+<meta property="og:description" content="WhatsApp, Instagram, Messenger, SMS, Telegram, Viber, LINE, WeChat, Zalo y un canal API para cualquier otra plataforma.">
+<meta property="og:type" content="article">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='26' fill='%235B7CFA'/%3E%3Cpath d='M78 46.5a30 30 0 0 1-3.2 13.5 30.5 30.5 0 0 1-27.3 16.9 30 30 0 0 1-13.5-3.2L20 78l6.8-20.4A30 30 0 0 1 23.6 44 30.5 30.5 0 0 1 40.5 16.7 30 30 0 0 1 54 13.5h1.8A30.4 30.4 0 0 1 84 41.9z' fill='none' stroke='%23fff' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+
+<div id="site-header-slot"></div>
+
+<section class="post-hero">
+  <div class="wrap">
+    <span class="eyebrow" data-i18n="novedades_eyebrow">Últimas noticias</span>
+    <h1 id="postTitle">Todos los canales que ya usan tus clientes</h1>
+    <div class="post-meta" id="postDate">12 de septiembre de 2026</div>
+  </div>
+</section>
+
+<section class="post-body">
+  <div class="wrap">
+    <div id="postContentEs">
+      <p>El cliente escribe por donde le apetece. La gracia de Chat CRM es que da igual: cada mensaje llega a la misma bandeja, venga de donde venga.</p>
+      <h2>Los canales disponibles</h2>
+      <ul>
+        <li>Chat web, con widget propio configurable.</li>
+        <li>WhatsApp Business, para atención, pedidos y avisos.</li>
+        <li>Messenger, integrado con páginas de Facebook.</li>
+        <li>Instagram DM, con los mensajes de la cuenta de empresa.</li>
+        <li>SMS vía Twilio, que llega incluso sin internet.</li>
+        <li>Telegram, mensajería rápida y privada.</li>
+        <li>Viber y LINE, para Europa del Este, Japón y Asia.</li>
+        <li>WeChat y Zalo, para China y Vietnam.</li>
+        <li>Canal API, para cualquier otra plataforma o aplicación propia.</li>
+      </ul>
+    </div>
+    <div id="postContentEn" style="display:none;">
+      <p>Customers write from wherever they feel like. The point of Chat CRM is that it does not matter: every message lands in the same inbox, wherever it comes from.</p>
+      <h2>The available channels</h2>
+      <ul>
+        <li>Web chat, with your own configurable widget.</li>
+        <li>WhatsApp Business, for support, orders and notifications.</li>
+        <li>Messenger, integrated with Facebook pages.</li>
+        <li>Instagram DM, with messages from the business account.</li>
+        <li>SMS through Twilio, which gets through even without internet.</li>
+        <li>Telegram, fast and private messaging.</li>
+        <li>Viber and LINE, for Eastern Europe, Japan and Asia.</li>
+        <li>WeChat and Zalo, for China and Vietnam.</li>
+        <li>An API channel, for any other platform or in-house app.</li>
+      </ul>
+    </div>
+
+    <div class="post-share">
+      <span class="share-label" data-i18n="share_label">Compartir:</span>
+      <div class="socials" id="shareIcons"></div>
+    </div>
+    <a class="post-back" href="../novedades.html" data-i18n="post_back">← Volver a novedades</a>
+  </div>
+</section>
+
+<div id="site-footer-slot"></div>
+
+<script src="../assets/i18n.js"></script>
+<script>
+  const POST_ES_TITLE = "Todos los canales que ya usan tus clientes";
+  const POST_EN_TITLE = "Every channel your customers already use";
+  const POST_DATE = '2026-09-12';
+  const POST_URL = window.location.href;
+
+  function onLanguageChange(lang){
+    const es = lang !== 'en';
+    document.getElementById('postContentEs').style.display = es ? '' : 'none';
+    document.getElementById('postContentEn').style.display = es ? 'none' : '';
+    const title = es ? POST_ES_TITLE : POST_EN_TITLE;
+    document.getElementById('postTitle').textContent = title;
+    document.getElementById('postDate').textContent =
+      new Date(POST_DATE + 'T00:00:00').toLocaleDateString(es ? 'es-ES' : 'en-GB', {day:'numeric', month:'long', year:'numeric'});
+    if (window.SiteShare) SiteShare.render('shareIcons', POST_URL, title);
+  }
+</script>
+<script>window.SITE_PREFIX = "../";</script>
+<script src="../assets/site-common.js"></script>
+
+</body>
+</html>
