@@ -8,6 +8,7 @@
 <meta property="og:title" content="Una bandeja de entrada para todo el equipo">
 <meta property="og:description" content="Todos los canales en un único inbox, con agentes asignados por canal, traspaso de chats, notas internas y respuestas guardadas.">
 <meta property="og:type" content="article">
+<meta property="og:image" content="https://retuertographicdesign.github.io/chat-crm/img/novedades/bandeja-compartida-equipo.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -28,6 +29,7 @@
 
 <section class="post-body">
   <div class="wrap">
+    <img class="post-cover" id="postCover" src="../img/novedades/bandeja-compartida-equipo.svg" alt="Una bandeja de entrada para todo el equipo">
     <div id="postContentEs">
       <p>La bandeja de entrada compartida es el centro de trabajo del equipo: todo lo que escriben los clientes, venga del canal que venga, aparece en el mismo sitio y en tiempo real.</p>
       <h2>Trabajar varios sobre la misma conversación</h2>
@@ -80,6 +82,8 @@
     document.getElementById('postTitle').textContent = title;
     document.getElementById('postDate').textContent =
       new Date(POST_DATE + 'T00:00:00').toLocaleDateString(es ? 'es-ES' : 'en-GB', {day:'numeric', month:'long', year:'numeric'});
+    const cover = document.getElementById('postCover');
+    if (cover) cover.alt = title;
     if (window.SiteShare) SiteShare.render('shareIcons', POST_URL, title);
   }
 </script>

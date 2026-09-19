@@ -8,6 +8,7 @@
 <meta property="og:title" content="Chat CRM ya está disponible">
 <meta property="og:description" content="Los nueve módulos de Chat CRM ya se pueden contratar e instalar en cualquier web.">
 <meta property="og:type" content="article">
+<meta property="og:image" content="https://retuertographicdesign.github.io/chat-crm/img/novedades/chat-crm-ya-esta-disponible.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -28,6 +29,7 @@
 
 <section class="post-body">
   <div class="wrap">
+    <img class="post-cover" id="postCover" src="../img/novedades/chat-crm-ya-esta-disponible.svg" alt="Chat CRM ya está disponible">
     <div id="postContentEs">
       <p>Chat CRM ya está disponible: una suite omnicanal de atención al cliente con nueve módulos que sustituyen a varias herramientas sueltas.</p>
       <h2>Qué incluye</h2>
@@ -82,6 +84,8 @@
     document.getElementById('postTitle').textContent = title;
     document.getElementById('postDate').textContent =
       new Date(POST_DATE + 'T00:00:00').toLocaleDateString(es ? 'es-ES' : 'en-GB', {day:'numeric', month:'long', year:'numeric'});
+    const cover = document.getElementById('postCover');
+    if (cover) cover.alt = title;
     if (window.SiteShare) SiteShare.render('shareIcons', POST_URL, title);
   }
 </script>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="Integraciones: antispam, avisos y API REST">
+  <defs>
+    <radialGradient id="g1" cx="18%" cy="24%" r="62%">
+      <stop offset="0%" stop-color="#7A6CF5" stop-opacity=".55"/>
+      <stop offset="100%" stop-color="#7A6CF5" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g2" cx="75%" cy="22%" r="55%">
+      <stop offset="0%" stop-color="#25D3A3" stop-opacity=".40"/>
+      <stop offset="100%" stop-color="#25D3A3" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="stroke" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#25D3A3"/>
+    </linearGradient>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M60 0H0V60" fill="none" stroke="#FFFFFF" stroke-opacity=".05" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="750" fill="#0B1020"/>
+  <rect width="1200" height="750" fill="url(#grid)"/>
+  <rect width="1200" height="750" fill="url(#g1)"/>
+  <rect width="1200" height="750" fill="url(#g2)"/>
+
+  <text x="1140" y="690" text-anchor="end" font-family="Inter, Helvetica, Arial, sans-serif"
+        font-size="240" font-weight="700" fill="#FFFFFF" fill-opacity=".05">09</text>
+
+  <g transform="translate(390 165) scale(17.5)" fill="none" stroke="url(#stroke)"
+     stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" opacity=".95">
+    <rect x="3" y="3" width="7" height="7" rx="1.5"/>
+    <rect x="14" y="14" width="7" height="7" rx="1.5"/>
+    <path d="M6.5 10v4.5A1.5 1.5 0 0 0 8 16h6"/>
+    <path d="M14 6.5h3.5A1.5 1.5 0 0 1 19 8v3"/>
+  </g>
+
+  <rect x="0" y="738" width="1200" height="12" fill="#25D3A3" fill-opacity=".9"/>
+</svg>

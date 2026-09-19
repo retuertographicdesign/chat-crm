@@ -8,6 +8,7 @@
 <meta property="og:title" content="Todos los canales que ya usan tus clientes">
 <meta property="og:description" content="WhatsApp, Instagram, Messenger, SMS, Telegram, Viber, LINE, WeChat, Zalo y un canal API para cualquier otra plataforma.">
 <meta property="og:type" content="article">
+<meta property="og:image" content="https://retuertographicdesign.github.io/chat-crm/img/novedades/todos-los-canales-una-bandeja.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -28,6 +29,7 @@
 
 <section class="post-body">
   <div class="wrap">
+    <img class="post-cover" id="postCover" src="../img/novedades/todos-los-canales-una-bandeja.svg" alt="Todos los canales que ya usan tus clientes">
     <div id="postContentEs">
       <p>El cliente escribe por donde le apetece. La gracia de Chat CRM es que da igual: cada mensaje llega a la misma bandeja, venga de donde venga.</p>
       <h2>Los canales disponibles</h2>
@@ -84,6 +86,8 @@
     document.getElementById('postTitle').textContent = title;
     document.getElementById('postDate').textContent =
       new Date(POST_DATE + 'T00:00:00').toLocaleDateString(es ? 'es-ES' : 'en-GB', {day:'numeric', month:'long', year:'numeric'});
+    const cover = document.getElementById('postCover');
+    if (cover) cover.alt = title;
     if (window.SiteShare) SiteShare.render('shareIcons', POST_URL, title);
   }
 </script>

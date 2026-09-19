@@ -3,7 +3,7 @@
     {
       "slug": "chat-crm-ya-esta-disponible",
       "date": "2026-09-18",
-      "image": "",
+      "image": "img/novedades/chat-crm-ya-esta-disponible.svg",
       "title_es": "Chat CRM ya está disponible",
       "excerpt_es": "Bandeja compartida, chatbots con IA, tickets, base de conocimiento y campañas de WhatsApp: los nueve módulos de Chat CRM ya se pueden contratar e instalar en cualquier web.",
       "title_en": "Chat CRM is now available",
@@ -12,7 +12,7 @@
     {
       "slug": "bandeja-compartida-equipo",
       "date": "2026-09-16",
-      "image": "",
+      "image": "img/novedades/bandeja-compartida-equipo.svg",
       "title_es": "Una bandeja de entrada para todo el equipo",
       "excerpt_es": "Todos los canales en un único inbox, con agentes asignados por canal, traspaso de chats, notas internas y respuestas guardadas.",
       "title_en": "One inbox for the whole team",
@@ -21,7 +21,7 @@
     {
       "slug": "todos-los-canales-una-bandeja",
       "date": "2026-09-12",
-      "image": "",
+      "image": "img/novedades/todos-los-canales-una-bandeja.svg",
       "title_es": "Todos los canales que ya usan tus clientes",
       "excerpt_es": "WhatsApp, Instagram, Messenger, SMS, Telegram, Viber, LINE, WeChat, Zalo y un canal API para cualquier otra plataforma.",
       "title_en": "Every channel your customers already use",
@@ -30,7 +30,7 @@
     {
       "slug": "widget-web-cuatro-paginas",
       "date": "2026-09-09",
-      "image": "",
+      "image": "img/novedades/widget-web-cuatro-paginas.svg",
       "title_es": "El widget web: hasta cuatro páginas en un solo botón",
       "excerpt_es": "Chat en vivo, base de conocimiento y tickets dentro de la propia web, con el estilo de la marca y sin tocar código.",
       "title_en": "The web widget: up to four pages behind one button",
@@ -39,7 +39,7 @@
     {
       "slug": "chatbots-sin-codigo",
       "date": "2026-09-04",
-      "image": "",
+      "image": "img/novedades/chatbots-sin-codigo.svg",
       "title_es": "Chatbots sin escribir una línea de código",
       "excerpt_es": "Un editor visual de flujos, con IA o por reglas, lógica condicional, acciones externas y traspaso a humano sin perder el contexto.",
       "title_en": "Chatbots without writing a line of code",
@@ -48,7 +48,7 @@
     {
       "slug": "ia-sin-ataduras-api-key-propia",
       "date": "2026-08-28",
-      "image": "",
+      "image": "img/novedades/ia-sin-ataduras-api-key-propia.svg",
       "title_es": "IA sin ataduras: tu proveedor y tu API key",
       "excerpt_es": "OpenAI, Claude, Gemini, DeepSeek, Grok, OpenRouter, HuggingFace o modelos autoalojados, con la clave del propio cliente y sin sobrecostes.",
       "title_en": "AI with no strings: your provider, your API key",
@@ -57,7 +57,7 @@
     {
       "slug": "centro-de-ayuda-dominio-propio",
       "date": "2026-08-21",
-      "image": "",
+      "image": "img/novedades/centro-de-ayuda-dominio-propio.svg",
       "title_es": "Un centro de ayuda en tu propio dominio",
       "excerpt_es": "Guías, tutoriales y FAQ con buscador, publicados en el dominio del cliente y sin servidor — y además sirven de fuente para la IA.",
       "title_en": "A help centre on your own domain",
@@ -66,7 +66,7 @@
     {
       "slug": "de-correos-sueltos-a-tickets",
       "date": "2026-08-14",
-      "image": "",
+      "image": "img/novedades/de-correos-sueltos-a-tickets.svg",
       "title_es": "De correos sueltos a tickets con dueño",
       "excerpt_es": "Los emails entrantes se convierten en tickets con todo el hilo, se reparten solos por reglas y siguen estados y prioridades propios.",
       "title_en": "From scattered emails to tickets with an owner",
@@ -75,7 +75,7 @@
     {
       "slug": "campanas-whatsapp-desde-el-panel",
       "date": "2026-08-07",
-      "image": "",
+      "image": "img/novedades/campanas-whatsapp-desde-el-panel.svg",
       "title_es": "Campañas de WhatsApp desde el mismo panel",
       "excerpt_es": "Contactos desde CSV, JSON o Google Sheets, plantillas aprobadas, envío programado y estadísticas de enviados, entregados y leídos.",
       "title_en": "WhatsApp campaigns from the same panel",
@@ -84,7 +84,7 @@
     {
       "slug": "integraciones-recaptcha-sheets-api",
       "date": "2026-08-01",
-      "image": "",
+      "image": "img/novedades/integraciones-recaptcha-sheets-api.svg",
       "title_es": "Integraciones: antispam, avisos y API REST",
       "excerpt_es": "reCAPTCHA y Cloudflare Turnstile contra el spam, avisos por Telegram y SMS, Google Sheets para los datos y API REST con webhooks para lo demás.",
       "title_en": "Integrations: antispam, alerts and a REST API",

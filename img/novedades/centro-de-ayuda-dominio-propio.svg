@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="Un centro de ayuda en tu propio dominio">
+  <defs>
+    <radialGradient id="g1" cx="18%" cy="14%" r="62%">
+      <stop offset="0%" stop-color="#7A6CF5" stop-opacity=".55"/>
+      <stop offset="100%" stop-color="#7A6CF5" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g2" cx="66%" cy="22%" r="55%">
+      <stop offset="0%" stop-color="#5B7CFA" stop-opacity=".40"/>
+      <stop offset="100%" stop-color="#5B7CFA" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="stroke" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#5B7CFA"/>
+    </linearGradient>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M60 0H0V60" fill="none" stroke="#FFFFFF" stroke-opacity=".05" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="750" fill="#0B1020"/>
+  <rect width="1200" height="750" fill="url(#grid)"/>
+  <rect width="1200" height="750" fill="url(#g1)"/>
+  <rect width="1200" height="750" fill="url(#g2)"/>
+
+  <text x="1140" y="690" text-anchor="end" font-family="Inter, Helvetica, Arial, sans-serif"
+        font-size="240" font-weight="700" fill="#FFFFFF" fill-opacity=".05">06</text>
+
+  <g transform="translate(390 165) scale(17.5)" fill="none" stroke="url(#stroke)"
+     stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" opacity=".95">
+    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+    <path d="M9 7h7M9 11h5"/>
+  </g>
+
+  <rect x="0" y="738" width="1200" height="12" fill="#5B7CFA" fill-opacity=".9"/>
+</svg>

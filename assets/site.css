@@ -430,6 +430,7 @@ header.scrolled .lang-btn{background:rgba(11,16,32,.06);border-color:var(--line)
 .post-hero .post-meta{color:rgba(255,255,255,.62);font-size:.85rem;}
 .post-body{background:var(--paper);padding:60px 0 100px;}
 .post-body .wrap{max-width:760px;}
+.post-body img.post-cover{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:18px;margin-bottom:36px;background:var(--ink);border:1px solid var(--line);}
 .post-body p{color:var(--text-soft);font-size:1.03rem;line-height:1.85;margin-bottom:20px;}
 .post-body h2{font-family:'Sora',system-ui,sans-serif;font-size:1.4rem;color:var(--ink);margin:36px 0 14px;}
 .post-body ul{margin:0 0 20px;}

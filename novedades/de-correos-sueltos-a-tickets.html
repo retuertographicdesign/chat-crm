@@ -8,6 +8,7 @@
 <meta property="og:title" content="De correos sueltos a tickets con dueño">
 <meta property="og:description" content="Los emails entrantes se convierten en tickets con todo el hilo, se reparten solos por reglas y siguen estados y prioridades propios.">
 <meta property="og:type" content="article">
+<meta property="og:image" content="https://retuertographicdesign.github.io/chat-crm/img/novedades/de-correos-sueltos-a-tickets.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -28,6 +29,7 @@
 
 <section class="post-body">
   <div class="wrap">
+    <img class="post-cover" id="postCover" src="../img/novedades/de-correos-sueltos-a-tickets.svg" alt="De correos sueltos a tickets con dueño">
     <div id="postContentEs">
       <p>El sistema de tickets se ocupa de cada solicitud de principio a fin, para que nada se quede en la bandeja de correo de una sola persona.</p>
       <h2>El correo deja de ser un agujero negro</h2>
@@ -68,6 +70,8 @@
     document.getElementById('postTitle').textContent = title;
     document.getElementById('postDate').textContent =
       new Date(POST_DATE + 'T00:00:00').toLocaleDateString(es ? 'es-ES' : 'en-GB', {day:'numeric', month:'long', year:'numeric'});
+    const cover = document.getElementById('postCover');
+    if (cover) cover.alt = title;
     if (window.SiteShare) SiteShare.render('shareIcons', POST_URL, title);
   }
 </script>

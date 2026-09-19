@@ -8,6 +8,7 @@
 <meta property="og:title" content="Integraciones: antispam, avisos y API REST">
 <meta property="og:description" content="reCAPTCHA y Cloudflare Turnstile contra el spam, avisos por Telegram y SMS, Google Sheets para los datos y API REST con webhooks para lo demás.">
 <meta property="og:type" content="article">
+<meta property="og:image" content="https://retuertographicdesign.github.io/chat-crm/img/novedades/integraciones-recaptcha-sheets-api.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -28,6 +29,7 @@
 
 <section class="post-body">
   <div class="wrap">
+    <img class="post-cover" id="postCover" src="../img/novedades/integraciones-recaptcha-sheets-api.svg" alt="Integraciones: antispam, avisos y API REST">
     <div id="postContentEs">
       <p>Chat CRM no pretende sustituir a todo lo que ya usa el equipo: se conecta con ello. Estas son las integraciones que trae de serie.</p>
       <h2>Antispam</h2>
@@ -80,6 +82,8 @@
     document.getElementById('postTitle').textContent = title;
     document.getElementById('postDate').textContent =
       new Date(POST_DATE + 'T00:00:00').toLocaleDateString(es ? 'es-ES' : 'en-GB', {day:'numeric', month:'long', year:'numeric'});
+    const cover = document.getElementById('postCover');
+    if (cover) cover.alt = title;
     if (window.SiteShare) SiteShare.render('shareIcons', POST_URL, title);
   }
 </script>
